@@ -1,7 +1,8 @@
-import { Box, Text, Flex } from "@chakra-ui/react";
+import { Box, Text, Flex, Button, useColorMode } from "@chakra-ui/react";
 import { FC } from "react";
 
 export const App: FC = () => {
+  const { toggleColorMode } = useColorMode();
   return (
     <>
       <Flex
@@ -11,10 +12,12 @@ export const App: FC = () => {
         alignItems="center"
       >
         <Box
+          flexDir={"column"}
           boxSize={"2xl"}
           display={"flex"}
           justifyContent="center"
           alignItems="center"
+          gap={"1rem"}
         >
           <Text
             as={"h1"}
@@ -22,6 +25,7 @@ export const App: FC = () => {
           >
             Начальная страница
           </Text>
+          <Button onClick={toggleColorMode}>Color Mode:</Button>
         </Box>
       </Flex>
     </>
