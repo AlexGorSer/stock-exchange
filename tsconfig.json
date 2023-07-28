@@ -17,7 +17,7 @@
     "jsx": "react-jsx",
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": { "src/*": ["src/*"] }
   },
   "include": [

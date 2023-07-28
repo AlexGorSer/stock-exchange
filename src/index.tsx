@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { App } from './app'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { BrowserRouter } from 'react-router-dom'
 
 const colors = {
   brand: {
@@ -13,7 +14,9 @@ const colors = {
 const theme = extendTheme({ colors })
 
 createRoot(document.getElementById('root')!).render(
-  <ChakraProvider theme={theme}>
-    <App />
-  </ChakraProvider>
+  <BrowserRouter>
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
+  </BrowserRouter>
 )
