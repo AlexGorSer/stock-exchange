@@ -1,8 +1,7 @@
-import { Box, Text, Flex, Button, useColorMode } from '@chakra-ui/react'
-import { FC } from 'react'
+import { Box, Text, Flex } from '@chakra-ui/react';
+import { FC } from 'react';
 
 export const Welcome: FC = () => {
-  const { toggleColorMode } = useColorMode()
   return (
     <>
       <Flex
@@ -22,9 +21,8 @@ export const Welcome: FC = () => {
           <Text as={'h1'} textAlign="center">
             Начальная страница
           </Text>
-          <Button onClick={toggleColorMode}>Color Mode:</Button>
         </Box>
       </Flex>
     </>
-  )
-}
+  );
+};

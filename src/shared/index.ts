@@ -1,3 +1,4 @@
-import { theme } from './config/ChakraConfig'
+import { theme } from './config/ChakraConfig';
+import { BASE_URL } from './api/baseURL';
 
-export { theme }
+export { theme, BASE_URL };

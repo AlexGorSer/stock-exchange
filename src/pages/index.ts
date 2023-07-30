@@ -1,4 +1,4 @@
-import { Layout } from './Layout'
-import { Welcome } from './Welcome'
+import { Layout } from './Layout';
+import { Welcome } from './Welcome';
 
-export { Layout, Welcome }
+export { Layout, Welcome };

@@ -1,6 +1,6 @@
-import { FC } from 'react'
-import { Route, Routes } from 'react-router-dom'
-import { Layout, Welcome } from 'src/pages'
+import { FC } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Layout, Welcome } from 'src/pages';
 
 export const App: FC = () => {
   return (
@@ -11,5 +11,5 @@ export const App: FC = () => {
         </Route>
       </Routes>
     </>
-  )
-}
+  );
+};
